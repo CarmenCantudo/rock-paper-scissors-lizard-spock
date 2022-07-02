@@ -13,9 +13,28 @@ body {
 
 /* headings */
 
-h1, h2{
+h1, h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #252525;
 }
 
+#intro {
+    background-size: cover;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    height: 15vh;
+    text-align: center;
+}
+
+#game {
+    background-size: cover;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    height: 85vh;
+    text-align: center;
+}
