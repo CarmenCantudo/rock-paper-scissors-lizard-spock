@@ -38,3 +38,11 @@ h1, h2 {
     height: 85vh;
     text-align: center;
 }
+
+#rules {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+}
