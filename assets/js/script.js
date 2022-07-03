@@ -1,20 +1,27 @@
-// Wait for the DOM to finish loading before running the game
-// Get the button elements and add event listeners to them
+// Popup from https://youtu.be/MBaw_6cPmAw
 
-document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("button");
+let openModalButtons = document.getElementById('btn-rules');
+let closeModalButtons = document.getElementById('close-btn-rules');
+let overlay = document.getElementById('overlay');
 
-    for (let button of buttons) {
-        button.addEventListener("click", function() {
-            if (this.getAttribute("data-type") === "submit") {
-                checkAnswer();
-            } else {
-                let gameType = this.getAttribute("data-type");
-                runGame(gameType);
-            }
-        });
-    }
+openModalButtons.addEventListener('click', () => {
+    let modal = document.getElementById('modal');
+    openModal(modal);
+})
 
-    runGame();
+closeModalButtons.addEventListener('click', () => {
+    let modal = document.getElementById('modal');
+    closeModal(modal);
+})
 
-});
+function openModal(modal) {
+    if (modal == null) return;
+    modal.classList.add('active');
+    overlay.classList.add('active');
+}
+
+function closeModal(modal) {
+    if (modal == null) return;
+    modal.classList.remove('active');
+    overlay.classList.remove('active');
+}
