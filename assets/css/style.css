@@ -59,6 +59,7 @@ h1, h2 {
     background-color: crimson;
     font-size: 1rem;
     border-radius: 8px;
+    margin-top: 10px;
 }
 .choice-btn:focus {
     outline: none;
