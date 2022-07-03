@@ -68,3 +68,14 @@ h1, h2 {
 .choice-btn:hover {
     background-color: darkred;
 }
+
+/* Game images */
+
+#game-img {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 10px;
+    height: 30vh;
+}
