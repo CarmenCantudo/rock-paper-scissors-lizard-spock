@@ -74,8 +74,9 @@ h1, h2 {
 #game-img {
     display: flex;
     flex-flow: row wrap;
+    align-content: center;
     justify-content: center;
     gap: 30px;
     padding-top: 10px;
-    height: 30vh;
+    height: 20vh;
 }
