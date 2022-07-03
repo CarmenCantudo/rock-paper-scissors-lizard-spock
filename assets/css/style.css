@@ -46,6 +46,10 @@ h1, h2 {
     text-align: center;
 }
 
+.rules-btn:hover {
+    background-color: indigo;
+}
+
 .modal {
     position: fixed;
     /* Center the text */
