@@ -62,17 +62,18 @@ function generatePcChoice() {
     if (randomChoice === 1) {
         pcRandomChoice = 'rock';
     }
-    else if (randomChoice === 2) {
+    if (randomChoice === 2) {
         pcRandomChoice = 'paper';
     }
-    else if (randomChoice === 3) {
+    if (randomChoice === 3) {
         pcRandomChoice = 'scissors';
     }
-    else if (randomChoice === 4) {
+    if (randomChoice === 4) {
         pcRandomChoice = 'lizard';
     }
-    else pcRandomChoice = 'spock';
-    
+    if (randomChoice === 5) {
+        pcRandomChoice = 'spock';
+    }
     pcChoice.innerHTML = pcRandomChoice;
 }
 
