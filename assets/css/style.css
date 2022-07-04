@@ -160,6 +160,14 @@ h1, h2 {
     height: 20vh;
 }
 
+.imgChoice {
+    width: 100px;
+}
+
+.imgChoice img {
+    width: 100%;
+}
+
 /* Score */
 
 #score {
