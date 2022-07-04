@@ -52,28 +52,13 @@ document.addEventListener("DOMContentLoaded", function() {
 // Add user options to user-choice div
 function runGame(gameChoice) {
     document.getElementsByClassName('choice-btn').value = "";
-    userChoice.innerHTML = gameChoice;
+    userChoice.innerHTML = '<img src="assets/images/'+ gameChoice + '.png" alt="rock">';
 }
 
 // Generate random pc choice
 function generatePcChoice() {
-    let randomChoice = Math.floor(Math.random() * choices.length);
-    
-    if (randomChoice === 1) {
-        pcRandomChoice = 'rock';
-    }
-    if (randomChoice === 2) {
-        pcRandomChoice = 'paper';
-    }
-    if (randomChoice === 3) {
-        pcRandomChoice = 'scissors';
-    }
-    if (randomChoice === 4) {
-        pcRandomChoice = 'lizard';
-    }
-    if (randomChoice === 5) {
-        pcRandomChoice = 'spock';
-    }
-    pcChoice.innerHTML = pcRandomChoice;
+    const pcChoices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+    const randomNumber =Math.floor(Math.random()*pcChoices.length);
+    pcChoice.innerHTML = '<img src="assets/images/'+ pcChoices[randomNumber] + '.png" alt="rock">';
 }
 
