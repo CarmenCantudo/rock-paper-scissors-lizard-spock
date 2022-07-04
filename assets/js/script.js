@@ -48,3 +48,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+// Add user options to user-choice div
+function runGame(gameChoice) {
+    document.getElementsByClassName('choice-btn').value = "";
+    userChoice.innerHTML = gameChoice;
+}
