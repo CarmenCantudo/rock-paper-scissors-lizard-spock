@@ -25,3 +25,26 @@ function closeModal(modal) {
     modal.classList.remove('active');
     overlay.classList.remove('active');
 }
+
+// Game
+
+let userChoice = document.getElementById('user-choice');
+let pcChoice = document.getElementById('pc-choice');
+let result = document.getElementById('result');
+let choices = document.getElementsByClassName('choice-btn');
+
+// Wait for the DOM to finish loading before running the game
+// Get the choice elements and add event listeners to them
+document.addEventListener("DOMContentLoaded", function() {
+    for (let choice of choices) {
+        choice.addEventListener("click", function() {
+            if (this.getAttribute("data-type") === "") {
+                checkAnswer();
+            } else {
+                let gameChoice = this.getAttribute("data-type");
+                runGame(gameChoice);
+                generatePcChoice();
+            }
+        });
+    }
+});
