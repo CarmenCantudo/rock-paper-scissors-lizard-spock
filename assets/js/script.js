@@ -59,7 +59,7 @@ function runGame(gameChoice) {
     userChoice.innerHTML = '<img src="assets/images/'+ gameChoice + '.png" alt="rock">';
 }
 
-// Generate random pc choice
+// Generate random pc choice and add it to pc-choice div
 function generatePcChoice() {
     const pcChoices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
     const randomNumber =Math.floor(Math.random()*pcChoices.length);
