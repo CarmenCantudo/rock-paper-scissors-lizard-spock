@@ -82,12 +82,12 @@ function game(UserClickChoice) {
                 ];
 
     let play_description = [
-                    ["It's a tie","Paper covers Rock","Rock crushes Scissors","Rock crushes Lizard","Spock vaporizes Rock"],
-                    ["Paper covers Rock","It's a tie","Scissors cuts Paper","Lizard eats Paper","Paper disproves Spock"],
-                    ["Rock crushes Scissos","Scissors cuts Paper","It's a tie","Scissors decapitates Lizard","Spock smashes Scissors"],
-                    ["Rock crushes Lizard","Lizard eats Paper","Scissors decapitates Lizard","It's a tie","Lizard poisons Spock"],
-                    ["Spock vaporizes Rock","Paper disproves Spock","Spock smashes Scissors","Lizard poisons Spock","It's a tie"],
-                ];
+        ["Same choice","Paper covers Rock","Rock crushes Scissors","Rock crushes Lizard","Spock vaporizes Rock"],
+        ["Paper covers Rock","Same choice","Scissors cuts Paper","Lizard eats Paper","Paper disproves Spock"],
+        ["Rock crushes Scissos","Scissors cuts Paper","Same choice","Scissors decapitates Lizard","Spock smashes Scissors"],
+        ["Rock crushes Lizard","Lizard eats Paper","Scissors decapitates Lizard","Same choice","Lizard poisons Spock"],
+        ["Spock vaporizes Rock","Paper disproves Spock","Spock smashes Scissors","Lizard poisons Spock","Same choice"],
+    ];
 
     playResult = play[pcRandomChoice][userNumberChoice];
     let result_text = ["It's a tie!", "You win!", "You lose!"];
