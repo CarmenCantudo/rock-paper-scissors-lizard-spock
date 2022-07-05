@@ -74,12 +74,12 @@ function generatePcChoice() {
 function game(UserClickChoice) {
     let userNumberChoice = pcChoices.indexOf(UserClickChoice);
     let play = [
-                    [0,1,2,2,1],
-                    [2,0,1,1,2],
-                    [1,2,0,2,1],
-                    [1,2,1,0,2],
-                    [2,1,2,1,0],
-                ];
+        [0,1,2,2,1],
+        [2,0,1,1,2],
+        [1,2,0,2,1],
+        [1,2,1,0,2],
+        [2,1,2,1,0],
+    ];
 
     let play_description = [
         ["Same choice","Paper covers Rock","Rock crushes Scissors","Rock crushes Lizard","Spock vaporizes Rock"],
