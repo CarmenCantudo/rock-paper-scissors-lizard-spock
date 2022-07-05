@@ -53,32 +53,17 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-// Wait for the DOM to finish loading before running the game
-// Get the choice elements and add event listeners to them
-document.addEventListener("DOMContentLoaded", function() {
-    for (let choice of choices) {
-        choice.addEventListener("click", function() {
-            if (this.getAttribute("data-type") === "") {
-                checkAnswer();
-            } else {
-                let gameChoice = this.getAttribute("data-type");
-                runGame(gameChoice);
-                generatePcChoice();
-            }
-        });
-    }
-});
-
 // Add user options to user-choice div
-function runGame(gameChoice) {
+function runGame(UserClickChoice) {
     document.getElementsByClassName('choice-btn').value = "";
-    userChoice.innerHTML = '<img src="assets/images/'+ gameChoice + '.png" alt="rock">';
+    userChoice.innerHTML = '<img src="assets/images/'+ UserClickChoice + '.png" alt="rock">';
 }
 
-// Generate random pc choice and add it to pc-choice div
+// Generate random pc choice
 function generatePcChoice() {
-    const pcChoices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
-    const randomNumber =Math.floor(Math.random()*pcChoices.length);
-    pcChoice.innerHTML = '<img src="assets/images/'+ pcChoices[randomNumber] + '.png" alt="rock">';
+    pcRandomChoice =Math.floor(Math.random()*pcChoices.length);
+    pcFinalChoice = pcChoices[pcRandomChoice]
+    pcChoice.innerHTML = '<img src="assets/images/'+ pcFinalChoice + '.png" alt="rock">';
+    game(UserClickChoice);
 }
 
