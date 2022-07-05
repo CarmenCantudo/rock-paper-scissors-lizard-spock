@@ -67,3 +67,24 @@ function generatePcChoice() {
     game(UserClickChoice);
 }
 
+/* 
+** Calculate the possible options and return the result
+** Code inspire by https://youtu.be/BjDZFfBWQ-0
+*/
+function game(UserClickChoice) {
+    let userNumberChoice = pcChoices.indexOf(UserClickChoice);
+    let play = [
+                    [0,1,2,2,1],
+                    [2,0,1,1,2],
+                    [1,2,0,2,1],
+                    [1,2,1,0,2],
+                    [2,1,2,1,0],
+                ];
+
+    playResult = play[pcRandomChoice][userNumberChoice];
+    let result_text = ['It\'s a tie', 'You win!', 'You lose'];
+    let message_description = play_description[pcRandomChoice][userNumberChoice];
+    result.innerHTML = message_description + '. ' + result_text[playResult];
+
+    // getScore(UserClickChoice)
+}
