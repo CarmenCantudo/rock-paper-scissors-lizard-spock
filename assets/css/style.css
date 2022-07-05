@@ -30,6 +30,14 @@ h1, h2 {
     text-align: center;
 }
 
+.rulesScore {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+}
+
 /* Rules popup from https://youtu.be/MBaw_6cPmAw */
 
 .rules-btn {
@@ -114,6 +122,9 @@ h1, h2 {
     pointer-events: all;
     opacity: 1;
 }
+
+/* Scores */
+
 
 /* Game section */
 #game {
