@@ -12,7 +12,7 @@
 <body>
     <section id="intro">
         <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
-        <div>
+        <div class="rulesScore">
             <!-- Popup from https://youtu.be/MBaw_6cPmAw -->
             <button class="rules-btn" id="btn-rules">Rules</button>
             <div id="modal" class="modal">
@@ -35,11 +35,23 @@
                 </div>
             </div>
             <div id="overlay"></div>
-            <h2>Score</h2>
-        <div id="score">
-            <p id="user-score"></p>
-            <p id="pc-score"></p>
-        </div>
+            <div>
+                <h2>Score</h2>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Player</th>
+                        <th>Computer</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0</td>
+                        <td>0</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
     <section id="game">
