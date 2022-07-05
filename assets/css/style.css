@@ -33,15 +33,13 @@ h1, h2 {
 /* Rules popup from https://youtu.be/MBaw_6cPmAw */
 
 .rules-btn {
-    width: 220px;
-    height: 60px;
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
+    width: 120px;
+    height: 50px;
     letter-spacing: 1.2px;
     color: white;
-    background-color: darkblue;
+    background-color: purple;
     font-size: 1rem;
-    border-radius: 8px;
+    border-radius: 5px;
     margin-top: 10px;
     text-align: center;
 }
