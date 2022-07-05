@@ -28,14 +28,30 @@ function closeModal(modal) {
 
 // Game
 
+const pcChoices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 let userChoice = document.getElementById('user-choice');
 let pcChoice = document.getElementById('pc-choice');
 let result = document.getElementById('result');
 let choices = document.getElementsByClassName('choice-btn');
-let playerScoreDiv = document.getElementById("user-score");
-let computerScoreDiv = document.getElementById("pc-score");
+let UserClickChoice;
+let pcRandomChoice;
+let pcFinalChoice;
+let userScoreDiv = document.getElementById("user-score");
+let pcScoreDiv = document.getElementById("pc-score");
 let userScore = 0;
 let pcScore = 0;
+
+// Wait for the DOM to finish loading before running the game
+// Get the choice elements and add event listeners to them
+document.addEventListener("DOMContentLoaded", function() {
+    for (let choice of choices) {
+        choice.addEventListener("click", function() {
+                UserClickChoice = this.getAttribute("data-type");
+                runGame(UserClickChoice);
+                generatePcChoice();
+        })
+    }
+});
 
 // Wait for the DOM to finish loading before running the game
 // Get the choice elements and add event listeners to them
