@@ -94,5 +94,21 @@ function game(UserClickChoice) {
     let message_description = play_description[pcRandomChoice][userNumberChoice];
     result.innerHTML = message_description + '. ' + result_text[playResult];
 
-    // getScore(UserClickChoice)
+    getScore();
+}
+
+// Get the score and add it to div
+function getScore() {
+    if (playResult === 0) {
+        userScoreDiv.innerHTML = userScore;
+        pcScoreDiv.innerHTML = pcScore;
+    } else if(playResult === 1) {
+        userScore++;
+        userScoreDiv.innerHTML = userScore;
+        pcScoreDiv.innerHTML = pcScore;
+    } else {
+        pcScore++;
+        userScoreDiv.innerHTML = userScore;
+        pcScoreDiv.innerHTML = pcScore;
+    }
 }
