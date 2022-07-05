@@ -48,6 +48,10 @@ h1, h2 {
     background-color: indigo;
 }
 
+.rulesImg {
+    width: 30%;
+}
+
 .modal {
     position: fixed;
     /* Center the text */
