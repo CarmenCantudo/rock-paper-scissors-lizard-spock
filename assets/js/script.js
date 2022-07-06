@@ -87,7 +87,7 @@ function game(UserClickChoice) {
     let play_description = [
         ["Same choice","Paper covers Rock","Rock crushes Scissors","Rock crushes Lizard","Spock vaporizes Rock"],
         ["Paper covers Rock","Same choice","Scissors cuts Paper","Lizard eats Paper","Paper disproves Spock"],
-        ["Rock crushes Scissos","Scissors cuts Paper","Same choice","Scissors decapitates Lizard","Spock smashes Scissors"],
+        ["Rock crushes Scissors","Scissors cuts Paper","Same choice","Scissors decapitates Lizard","Spock smashes Scissors"],
         ["Rock crushes Lizard","Lizard eats Paper","Scissors decapitates Lizard","Same choice","Lizard poisons Spock"],
         ["Spock vaporizes Rock","Paper disproves Spock","Spock smashes Scissors","Lizard poisons Spock","Same choice"],
     ];
