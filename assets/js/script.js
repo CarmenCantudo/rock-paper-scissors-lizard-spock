@@ -1,4 +1,4 @@
-// Popup from https://youtu.be/MBaw_6cPmAw
+// Popup modal from https://youtu.be/MBaw_6cPmAw
 
 let openModalButtons = document.getElementById('btn-rules');
 let closeModalButtons = document.getElementById('close-btn-rules');
