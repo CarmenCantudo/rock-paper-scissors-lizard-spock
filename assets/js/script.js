@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 UserClickChoice = this.getAttribute("data-type");
                 runGame(UserClickChoice);
                 generatePcChoice();
-        })
+        });
     }
 });
 
@@ -65,7 +65,7 @@ function runGame(UserClickChoice) {
 // Generate random pc choice
 function generatePcChoice() {
     pcRandomChoice =Math.floor(Math.random()*pcChoices.length);
-    pcFinalChoice = pcChoices[pcRandomChoice]
+    pcFinalChoice = pcChoices[pcRandomChoice];
     pcChoice.innerHTML = '<img src="assets/images/'+ pcFinalChoice + '.png" alt="rock">';
     game(UserClickChoice);
 }
@@ -150,7 +150,7 @@ function userWin() {
     closeModalWin.addEventListener('click', () => {
         modalWin.classList.remove('active');
         overlay.classList.remove('active');
-    })
+    });
 }
 
 function pcWin() {
@@ -161,5 +161,5 @@ function pcWin() {
     closeModalLose.addEventListener('click', () => {
         modalLose.classList.remove('active');
         overlay.classList.remove('active');
-    })
+    });
 }
