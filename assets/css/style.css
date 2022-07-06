@@ -67,6 +67,11 @@ h1 {
     border-style: outset;
     background: bottom;
     cursor: pointer;
+    border-color: #86A8E7;
+}
+
+.rules-btn:active, .reset-btn:active {
+    border-style: inset;
 }
 
 .rulesImg {
