@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@0;1&display=swap&family=Caveat:wght@600');
 
 * {
     margin: 0;
@@ -191,4 +191,10 @@ h1, h2 {
 
 #user-score::after, #pc-score::after {
     content: attr(data-type);
+}
+
+/* Result */
+#result {
+    font-family: 'Caveat', cursive;
+    font-size: 34px;
 }
