@@ -143,6 +143,19 @@ h1 {
     align-content: center;
 }
 
+table {
+    background-color: purple;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    letter-spacing: 1.2px;
+    padding-bottom: 5px;
+}
+.score-userPc {
+    padding: 10px 15px;
+    text-decoration: underline;
+}
+
 #user-score::after, #pc-score::after {
     content: attr(data-type);
 }
