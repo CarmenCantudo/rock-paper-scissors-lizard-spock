@@ -203,7 +203,10 @@ table {
 .choice-btn:focus {
     outline: none;
 }
-.choice-btn:active,
+.choice-btn:active {
+    border-style: inset;
+    border-color: #86A8E7;
+}
 .choice-btn:hover {
     box-shadow: none;
 }
