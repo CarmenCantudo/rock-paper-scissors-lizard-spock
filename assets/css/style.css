@@ -254,6 +254,29 @@ table {
     margin: 30px;
 }
 
+/* Win Lose */
+#modalwin, #modallose {
+    display: none;
+}
+
+#modalwin.active, #modallose.active {
+    display: block;
+}
+
+.modal-winLose {
+    text-align: right;
+    float: right;
+    border-bottom: none;
+}
+
+.winlose {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+}
+
 /* Media queries */
 
 /* For larger to medium screens size from 950px wide and down */
