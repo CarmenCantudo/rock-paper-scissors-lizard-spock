@@ -179,6 +179,10 @@ table {
 }
 
 /* Options */
+#choice {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 
 .choice-btn {
     width: 180px;
