@@ -7,12 +7,12 @@ let overlay = document.getElementById('overlay');
 openModalButtons.addEventListener('click', () => {
     let modal = document.getElementById('modal');
     openModal(modal);
-})
+});
 
 closeModalButtons.addEventListener('click', () => {
     let modal = document.getElementById('modal');
     closeModal(modal);
-})
+});
 
 function openModal(modal) {
     if (modal == null) return;
@@ -142,6 +142,7 @@ function endGame() {
     }
 }
 
+// If the user wins it popups up a modal message
 function userWin() {
     modalWin.classList.add('active');
     overlay.classList.add('active');
@@ -153,6 +154,7 @@ function userWin() {
     });
 }
 
+// If the user loses it popups up a modal message
 function pcWin() {
     modalLose.classList.add('active');
     overlay.classList.add('active');
