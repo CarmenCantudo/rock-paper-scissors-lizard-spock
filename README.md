@@ -36,6 +36,10 @@ The Live Game can be accessed [HERE!](https://carmencantudo.github.io/rock-paper
     - [Imagery](#imagery)
     - [Wireframes](#wireframes)
   - [Testing](#testing)
+    - [Validator Testing](#validator-testing)
+  - [Technologies Used](#technologies-used)
+    - [Main Languages Used](#main-languages-used)
+    - [Frameworks, Libraries \& Programs Used](#frameworks-libraries--programs-used)
 
 
 ## Features
@@ -161,6 +165,37 @@ The site's images were gathered from free stock photo websites, and the sources 
 - Tested all buttons.
 - Website tested in Chrome, Firefox, Microsoft Edge and Brave.
 - Lighthouse used to test webpage for Performance, Accessibility, Best Practices and SEO for desktop and mobile:
-  ![Lighthouse Desktop Performance](assets/images/lighthouse.png)
-  ![Lighthouse Mobile Performance](assets/images/lighthouse-mobile.png)
-- To improve web performance, all the images format was changed to WebP, which provides better compression, which means faster downloads and less data consumption.
+  ![Lighthouse Performance](assets/docs/testing/lighthouse.png)
+
+### Validator Testing
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcarmencantudo.github.io%2Frock-paper-scissors-lizard-spock%2F).
+  ![Html Validator](assets/docs/testing/html-validator.png)
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcarmencantudo.github.io%2Frock-paper-scissors-lizard-spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
+  ![Css Validator](assets/docs/testing/css-validator.png)
+-Javascript
+  - JavaScript was tested using [Beautifytools](https://beautifytools.com/javascript-validator.php).
+  ![Javascript Validator](assets/docs/testing/javascript-validator.png)
+
+[Back to top](#rock-paper-scissors-lizard-spock)
+
+## Technologies Used
+
+### Main Languages Used
+- HTML
+- CSS
+- JavaScript
+
+### Frameworks, Libraries & Programs Used
+- Gitpod: to create my Html files & styling sheet before pushing the project to GitHub.
+- GitHub: to store my repository for submission.
+- Balsamiq Wireframes: to make the wireframes for the website.
+- Adobe Illustrator and Procreate: to create the logo.
+- Google Fonts: for the font families, Amiri, Noto Sans, Playfair Display, Special Elite.
+- Am I Responsive?: to ensure the project looked good across all devices.
+- Cloudinary: to store, transform, optimise, and deliver the media assets.
+- Markdown cheat sheet: to complete the Readme.
+
+[Back to top](#rock-paper-scissors-lizard-spock)
+
