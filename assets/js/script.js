@@ -36,10 +36,11 @@ let choices = document.getElementsByClassName('choice-btn');
 let UserClickChoice;
 let pcRandomChoice;
 let pcFinalChoice;
-let userScoreDiv = document.getElementById("user-score");
-let pcScoreDiv = document.getElementById("pc-score");
+let userScoreTable = document.getElementById("user-score");
+let pcScoreTable = document.getElementById("pc-score");
 let userScore = 0;
 let pcScore = 0;
+const resetBtn = document.getElementById("reset");
 
 // Wait for the DOM to finish loading before running the game
 // Get the choice elements and add event listeners to them
@@ -100,15 +101,24 @@ function game(UserClickChoice) {
 // Get the score and add it to div
 function getScore() {
     if (playResult === 0) {
-        userScoreDiv.innerHTML = userScore;
-        pcScoreDiv.innerHTML = pcScore;
+        userScoreTable.innerHTML = userScore;
+        pcScoreTable.innerHTML = pcScore;
     } else if(playResult === 1) {
         userScore++;
-        userScoreDiv.innerHTML = userScore;
-        pcScoreDiv.innerHTML = pcScore;
+        userScoreTable.innerHTML = userScore;
+        pcScoreTable.innerHTML = pcScore;
     } else {
         pcScore++;
-        userScoreDiv.innerHTML = userScore;
-        pcScoreDiv.innerHTML = pcScore;
+        userScoreTable.innerHTML = userScore;
+        pcScoreTable.innerHTML = pcScore;
     }
 }
+
+// When user clicks on reset button scores will reset
+resetBtn.addEventListener("click", () => {
+    userScore = 0;
+    pcScore = 0;
+    userScoreTable.innerHTML = userScore;
+    pcScoreTable.innerHTML = pcScore;    
+    }
+);
