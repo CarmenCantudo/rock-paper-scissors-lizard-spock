@@ -13,28 +13,31 @@
     <section id="intro">
         <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
         <div class="rulesScore">
-            <!-- Popup from https://youtu.be/MBaw_6cPmAw -->
-            <button class="rules-btn" id="btn-rules">Rules</button>
-            <div id="modal" class="modal">
-                <div class="modal-header">
-                    <div class="title">Rules</div>
-                    <button id="close-btn-rules" class="close-btn">&times;</button>
+            <div class="rulesReset-btns">
+                <!-- Popup inspired from https://youtu.be/MBaw_6cPmAw -->
+                <button class="rules-btn" id="btn-rules">Rules</button>
+                <div id="modal" class="modal">
+                    <div class="modal-header">
+                        <div class="title">Rules</div>
+                        <button id="close-btn-rules" class="close-btn">&times;</button>
+                    </div>
+                    <div class="rules">
+                        <img class="rulesImg" src="assets/images/rules.webp" alt="Rules">
+                        <p>Scissors cuts Paper</p>
+                        <p>Paper covers Rock</p>
+                        <p>Rock crushes Lizard</p>
+                        <p>Lizard poisons Spock</p>
+                        <p>Spock smashes Scissors</p>
+                        <p>Scissors decapitates Lizard</p>
+                        <p>Lizard eats Paper</p>
+                        <p>Paper disproves Spock</p>
+                        <p>Spock vaporizes Rock</p>
+                        <p>(And as it always has) Rock crushes Scissors</p>
+                    </div>
                 </div>
-                <div class="rules">
-                    <img class="rulesImg" src="assets/images/rules.webp" alt="Rules">
-                    <p>Scissors cuts Paper</p>
-                    <p>Paper covers Rock</p>
-                    <p>Rock crushes Lizard</p>
-                    <p>Lizard poisons Spock</p>
-                    <p>Spock smashes Scissors</p>
-                    <p>Scissors decapitates Lizard</p>
-                    <p>Lizard eats Paper</p>
-                    <p>Paper disproves Spock</p>
-                    <p>Spock vaporizes Rock</p>
-                    <p>(And as it always has) Rock crushes Scissors</p>
-                </div>
+                <div id="overlay"></div>
+                <button class="reset-btn">Reset</button>
             </div>
-            <div id="overlay"></div>
             <div>
                 <h2>Score</h2>
                 <table>
