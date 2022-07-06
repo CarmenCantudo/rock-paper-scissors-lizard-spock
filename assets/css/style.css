@@ -222,6 +222,13 @@ table {
 
 .imgChoice {
     width: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 3px solid #00c9b7;
+    padding: 10px 25px;
+    height: 140px;
+    margin: 20px;
 }
 
 .imgChoice img {
