@@ -41,6 +41,11 @@ h1 {
     justify-content: space-evenly;
     align-items: center;
     width: 40%;
+    background-color: aliceblue;
+    padding: 15px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 0px 0px 8px 7px #888888;
 }
 
 /* Rules popup inspired from https://youtu.be/MBaw_6cPmAw */
