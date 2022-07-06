@@ -298,6 +298,7 @@ table {
 @media screen and (max-width: 540px) {
     #result {
         width: -webkit-fill-available;
+        min-height: 50px;
         height: auto;
     }
     .rulesScore {
