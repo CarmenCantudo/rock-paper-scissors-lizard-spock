@@ -253,3 +253,68 @@ table {
     width: 600px;
     margin: 30px;
 }
+
+/* Media queries */
+
+/* For larger to medium screens size from 950px wide and down */
+@media screen and (max-width: 950px) {
+    #game {
+        height: auto;
+        margin: 20px;
+    }
+    #choice {
+        padding: 0 100px;
+    }
+}
+
+/* For larger to medium screens size from 810px wide and down */
+@media screen and (max-width: 810px) {
+    #choice {
+        padding: 0;
+    }
+    .rulesScore {
+        width: 60%;
+    }
+}
+
+/* For larger to medium screens size from 720px wide and down */
+@media screen and (max-width: 720px) {
+    h1 {
+        font-size: 40px;
+    }
+    #result {
+        width: 500px;
+    }
+}
+
+/* For larger to medium screens size from 630px wide and down */
+@media screen and (max-width: 630px) {
+    #intro {
+        height: auto;
+    }
+}
+
+/* For larger to medium screens size from 540px wide and down */
+@media screen and (max-width: 540px) {
+    #result {
+        width: -webkit-fill-available;
+        height: auto;
+    }
+    .rulesScore {
+        width: auto;
+    }
+    #game-img {
+        gap: 0;
+        height: auto;
+    }
+    .imgChoice {
+        margin: 2px;
+    }
+}
+
+/* For larger to medium screens size from 360px wide and down */
+@media screen and (max-width: 360px) {
+    .rulesScore {
+        flex-direction: column;
+    }
+}
