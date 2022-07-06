@@ -45,6 +45,7 @@ h1 {
     padding: 15px;
     border: 1px groove;
     padding: 10px;
+    margin: 20px;
 }
 
 /* Rules popup inspired from https://youtu.be/MBaw_6cPmAw */
@@ -151,12 +152,12 @@ h1 {
 }
 
 table {
-    background-color: purple;
-    color: white;
-    font-size: 1rem;
+    color: black;
+    font-size: 1.1rem;
     border-radius: 5px;
     letter-spacing: 1.2px;
     padding-bottom: 5px;
+    font-weight: 600;
 }
 .score-userPc {
     padding: 10px 15px;
