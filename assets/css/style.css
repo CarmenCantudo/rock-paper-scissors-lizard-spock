@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@0;1&display=swap&family=Caveat:wght@600');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@0;1&family=Caveat:wght@600&family=Rubik+Moonrocks&display=swap');
 
 * {
     margin: 0;
@@ -19,6 +19,11 @@ h1, h2 {
     color: #252525;
 }
 
+h1 {
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 46px;
+}
+
 /* Intro section */
 #intro {
     background-size: cover;
@@ -26,7 +31,7 @@ h1, h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 25vh;
+    height: 40vh;
     text-align: center;
 }
 
