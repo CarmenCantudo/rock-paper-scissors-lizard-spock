@@ -12,5 +12,155 @@ Scissors cuts Paper, Paper covers Rock, Rock crushes Lizard, Lizard poisons Spoc
 
 ![Responsive web image](assets/docs/testing/amiresponsive.PNG)
 
-[The Live Game can be accessed HERE!](https://carmencantudo.github.io/rock-paper-scissors-lizard-spock/)
+The Live Game can be accessed [HERE!](https://carmencantudo.github.io/rock-paper-scissors-lizard-spock/)
 
+<br>
+
+## Table of Contents
+- [Rock, Paper, Scissors, Lizard, Spock](#rock-paperscissors-lizardspock)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Future Features](#future-features)
+  - [UX](#ux)
+    - [Site Purpose](#site-purpose)
+    - [Site Goal](#site-goal)
+    - [Audience](#audience)
+    - [Communication](#communication)
+    - [Current User Goals](#current-user-goals)
+    - [New User Goals](#new-user-goals)
+    - [Site Administrator Goals](#site-administrator-goals)
+  - [Design](#design)
+    - [Colour Scheme](#colour-scheme)
+    - [Typography](#typography)
+    - [Imagery](#imagery)
+    - [Wireframes](#wireframes)
+  - [Testing](#testing)
+
+
+## Features
+### Existing Features
+
+<details><summary> Header </summary>
+
+![Header](assets/docs/features/header.png)
+
+The Header at the top of the page features a contrasting font that makes it stand out, and it prominently displays the game's title.
+
+</details>
+
+<details><summary> The Rules, Reset button and Score Area </summary>
+
+![Rules, reset button and scores](assets/docs/features/rules-reset-scores.png)
+
+- Rules button:
+
+The modal gives a short overview of the game rules.
+The modal contains a close button, which the user can use to close it.
+![Rules](assets/docs/features/rules.png)
+
+- Reset button:
+  
+When clicked it resets the scores to 0 and remove the choices and result from the game area.
+
+- Scores area:
+
+On the left is the player's score, which increases after each player win.
+The right shows the computer's score, which also updates after each win.
+
+</details>
+
+<details><summary> Choices Area </summary>
+
+![Choices](assets/docs/features/choices.png)
+
+The next section contains the game options that the player can select: Rock, Paper, Scissors, Lizard, Spock.
+When the player clicks on one, the computer initiates an automatic random play.
+
+To assist the user in learning the hand movements often associated with the game, the printed name and a Font Awesome icon are used to represent it.
+
+Each button also includes a hoover and active element for the assistance of users.
+
+</details>
+
+<details><summary> User vs Computer Area </summary>
+
+![User vs Computer](assets/docs/features/user-pc-options.png)
+
+The left box displays the player's selected choice, while the right box displays the computers. This facilitates comparison.
+
+The chosen option displays a humorous picture of the actual choice.
+
+</details>
+
+<details><summary> Result message Area </summary>
+
+![Result](assets/docs/features/result.png)
+
+The winning decision based on the game's rules is also displayed after each round.
+It's also beneficial for inexperienced users because they may learn the game's rules while they play.
+
+</details>
+
+### Future Features
+
+- To store your scores and add a player name, click here.
+- To ensure return and new visitors by sharing their high score or victories on social media.
+
+[Back to top](#rock-paper-scissors-lizard-spock)
+
+## UX
+### Site Purpose
+
+### Site Goal
+
+### Audience
+
+### Communication
+The information is easily accessible to all visitors because of the website's straightforward design. Without having to conduct a thorough search, the information is readily available.
+
+### Current User Goals
+
+### New User Goals
+
+### Site Administrator Goals
+
+
+[Back to top](#rock-paper-scissors-lizard-spock)
+
+## Design
+### Colour Scheme
+The colour scheme was designed to provide as much contrast as possible without becoming excessive. The accompanying imagery displayed across the site gives the majority of the colour.
+
+![Colour palette](assets/images/color-palette.png)
+
+### Typography
++ Playfair Display: Medium 500 Italic for quotes and regular 400 for titles.
++ Noto Sans: Light 300 for the body.
++ Special Elite: it mimics a typewriter and is used on the navigation menu.
++ Amiri: For book descriptions.
+
+### Imagery
+The site's images were gathered from free stock photo websites, and the sources are listed in the Credits section. Each photo provided supports the site's theme.
+
+### Wireframes
+- Desktop
+![Desktop](assets/docs/wireframes/desktop.png)
+
+- Tablet
+![Tablet](assets/docs/wireframes/tablet.png)
+
+- Mobile
+![Mobile](assets/docs/wireframes/mobile.png)
+
+[Back to top](#rock-paper-scissors-lizard-spock)
+
+## Testing
+
+- The website was constantly tested during development using Chrome dev tools.
+- Tested all buttons.
+- Website tested in Chrome, Firefox, Microsoft Edge and Brave.
+- Lighthouse used to test webpage for Performance, Accessibility, Best Practices and SEO for desktop and mobile:
+  ![Lighthouse Desktop Performance](assets/images/lighthouse.png)
+  ![Lighthouse Mobile Performance](assets/images/lighthouse-mobile.png)
+- To improve web performance, all the images format was changed to WebP, which provides better compression, which means faster downloads and less data consumption.
