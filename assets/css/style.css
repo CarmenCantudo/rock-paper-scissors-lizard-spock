@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: Titillium Web, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-weight: 400;
     background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
@@ -180,23 +180,26 @@ table {
 /* Options */
 
 .choice-btn {
-    width: 220px;
-    height: 60px;
+    width: 180px;
+    height: 50px;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     color: white;
-    background-color: steelblue;
     font-size: 1rem;
     border-radius: 8px;
     margin-top: 10px;
+    border-radius: 50px;
+    background: #00c9b7;
+    box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
+    cursor: pointer;
 }
 .choice-btn:focus {
     outline: none;
 }
 .choice-btn:active,
 .choice-btn:hover {
-    background-color: #295d8a;
+    box-shadow: none;
 }
 
 /* Game images */
