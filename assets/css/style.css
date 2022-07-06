@@ -38,9 +38,15 @@ h1, h2 {
     width: 40%;
 }
 
-/* Rules popup from https://youtu.be/MBaw_6cPmAw */
+/* Rules popup inspired from https://youtu.be/MBaw_6cPmAw */
+.rulesReset-btns {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
 
-.rules-btn {
+.rules-btn, .reset-btn {
     width: 120px;
     height: 50px;
     letter-spacing: 1.2px;
@@ -52,7 +58,7 @@ h1, h2 {
     text-align: center;
 }
 
-.rules-btn:hover {
+.rules-btn:hover, .reset-btn:hover {
     background-color: indigo;
 }
 
@@ -125,6 +131,16 @@ h1, h2 {
 
 /* Scores */
 
+#score {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+#user-score::after, #pc-score::after {
+    content: attr(data-type);
+}
 
 /* Game section */
 #game {
@@ -156,7 +172,7 @@ h1, h2 {
 }
 .choice-btn:active,
 .choice-btn:hover {
-    background-color: darkred;
+    background-color: #295d8a;
 }
 
 /* Game images */
@@ -178,19 +194,6 @@ h1, h2 {
 
 .imgChoice img {
     width: 100%;
-}
-
-/* Score */
-
-#score {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-content: center;
-}
-
-#user-score::after, #pc-score::after {
-    content: attr(data-type);
 }
 
 /* Result */
