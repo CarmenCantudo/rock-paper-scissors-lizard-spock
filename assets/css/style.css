@@ -173,7 +173,8 @@ table {
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;
-    height: 75vh;
+    height: 60vh;
+    align-items: center;
     text-align: center;
 }
 
