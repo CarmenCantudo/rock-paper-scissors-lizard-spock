@@ -41,6 +41,8 @@ let pcScoreTable = document.getElementById("pc-score");
 let userScore = 0;
 let pcScore = 0;
 const resetBtn = document.getElementById("reset");
+let modalWin = document.getElementById('modalwin');
+let modalLose = document.getElementById('modallose');
 
 // Wait for the DOM to finish loading before running the game
 // Get the choice elements and add event listeners to them
@@ -112,6 +114,7 @@ function getScore() {
         userScoreTable.innerHTML = userScore;
         pcScoreTable.innerHTML = pcScore;
     }
+    endGame();
 }
 
 // When user clicks on reset button scores will reset
@@ -125,3 +128,38 @@ resetBtn.addEventListener("click", () => {
     pcChoice.innerHTML = "";
     }
 );
+
+// The game finishes when the user or the pc gets to 10 points
+function endGame() {
+    if (userScore === 10) {
+        userWin();
+        userScore = 0;
+        pcScore = 0; 
+    }else if (pcScore === 10) {
+        pcWin();
+        userScore = 0;
+        pcScore = 0;
+    }
+}
+
+function userWin() {
+    modalWin.classList.add('active');
+    overlay.classList.add('active');
+
+    let closeModalWin = document.getElementById('close-btn-win');
+    closeModalWin.addEventListener('click', () => {
+        modalWin.classList.remove('active');
+        overlay.classList.remove('active');
+    })
+}
+
+function pcWin() {
+    modalLose.classList.add('active');
+    overlay.classList.add('active');
+
+    let closeModalLose = document.getElementById('close-btn-lose');
+    closeModalLose.addEventListener('click', () => {
+        modalLose.classList.remove('active');
+        overlay.classList.remove('active');
+    })
+}
