@@ -233,16 +233,16 @@ table {
 
 .imgChoice img {
     width: 100%;
+    filter: drop-shadow(2px 4px 6px rgb(0 0 0 / 0.5));
 }
 
 /* Result */
 #result {
     font-family: 'Caveat', cursive;
     font-size: 34px;
-    margin: 15px;
     border: 1px solid;
     padding: 10px;
-    box-shadow: 0px 10px 15px 5px #888888;
+    box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
     height: 45px;
     width: 600px;
     margin: 30px;
