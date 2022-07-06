@@ -119,6 +119,9 @@ resetBtn.addEventListener("click", () => {
     userScore = 0;
     pcScore = 0;
     userScoreTable.innerHTML = userScore;
-    pcScoreTable.innerHTML = pcScore;    
+    pcScoreTable.innerHTML = pcScore;
+    result.innerHTML = "";
+    userChoice.innerHTML = "";
+    pcChoice.innerHTML = "";
     }
 );
