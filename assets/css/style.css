@@ -278,12 +278,12 @@ table {
     height: 200px;
 }
 
-.winLose h2{
+.winlose h2{
     font-size: 42px;
     font-family: 'Caveat', cursive;
 }
 
-.loseScores {
+.winScores, .loseScores {
     padding: 10px;
     font-size: 20px;
     letter-spacing: 2px;
