@@ -146,6 +146,8 @@ function endGame() {
 function userWin() {
     modalWin.classList.add('active');
     overlay.classList.add('active');
+    let finalScore = document.getElementById('winScores');
+    finalScore.innerHTML = "Player: " + userScore + ' - Computer: ' + pcScore;
 
     let closeModalWin = document.getElementById('close-btn-win');
     closeModalWin.addEventListener('click', () => {
@@ -158,6 +160,8 @@ function userWin() {
 function pcWin() {
     modalLose.classList.add('active');
     overlay.classList.add('active');
+    let finalScore = document.getElementById('loseScores');
+    finalScore.innerHTML = "Player: " + userScore + ' - Computer: ' + pcScore;
 
     let closeModalLose = document.getElementById('close-btn-lose');
     closeModalLose.addEventListener('click', () => {
