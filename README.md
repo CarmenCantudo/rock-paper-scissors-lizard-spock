@@ -52,6 +52,7 @@ The Live Game can be accessed [HERE!](https://carmencantudo.github.io/rock-paper
 
 ## Features
 ### Existing Features
+![Game](assets/docs/features/fullscreen.png)
 
 <details><summary> Header </summary>
 
