@@ -278,6 +278,17 @@ table {
     height: 200px;
 }
 
+.winLose h2{
+    font-size: 42px;
+    font-family: 'Caveat', cursive;
+}
+
+.loseScores {
+    padding: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
 /* Media queries */
 
 /* For larger to medium screens size from 950px wide and down */
