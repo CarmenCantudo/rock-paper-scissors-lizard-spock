@@ -115,6 +115,15 @@ It's also beneficial for inexperienced users because they may learn the game's r
 
 </details>
 
+<details><summary> Win & Lose Modals </summary>
+
+![You win!](assets/docs/features/youwin.png)
+![You lose!](assets/docs/features/youlose.png)
+
+When the user or the computer reaches 10 points, there is a popup message saying if the user wins or loses, showing the final scores.
+
+</details>
+
 ### Future Features
 
 - To store the scores and add a player name, click here.
