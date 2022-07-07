@@ -292,6 +292,10 @@ table {
 
 /* For larger to medium screens size from 810px wide and down */
 @media screen and (max-width: 810px) {
+    body {
+        height: 100vh;
+    }
+    
     #choice {
         padding: 0;
     }
